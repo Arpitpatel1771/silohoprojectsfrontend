@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test JQuery Sorting</title>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="./invoice.css" />
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="invoice-box">
+        <div class="invoice-drawline"></div>
+        <div class="invoice-company-info">
+            <div id="invoice-company-left">
+                <span class="invoice-company-name">Jonathan Doughertty</span>
+                <br>
+                <span class="invoice-company-address">
+                    1950, N.Pleasant Street,
+                    <br> Lorem Ipsum, Dolor sit amet, Consectetur, Tempor(E)
+                    <br>Mumbai -400072, Maharashtra
+                </span>
+            </div>
+            <div id="invoice-company-right">
+                <span class="invoice-info">Invoice</span>
+                <span class="invoice-date">Submitted &emsp; 25 Oct 1993</span>
+            </div>
+        </div>
+
+        <div class="invoice-user-info">
+            <div id="invoice-company-left">
+                <span class="invoice-for" style="margin-left:5px;">Invoice for</span>
+                <br>
+                <div class="address-manage">
+                    <div style="margin-left:5px;">
+                        <span class="invoice-company-address" style="line-height: 1.4 !important;">
+                            Awesome Services India Pvt. Ltd.
+                            <br> Lorem Ipsum, Dolores, 49 Tempor Road
+                            <br> Dolore eu fugiat nulla priatur. SC (W)
+                            <br> Mumbai - 400054, Maharsshtra
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="invoice-company-right"
+                style="line-height: 1 !important;float: right;text-align: right;padding-top: 30px;">
+                <span class="invoice-for">Payable to :</span>
+                <span>Pranshu Sharma</span>
+                <br>
+                <span class="invoice-for">Invoice # :</span>
+                <span style="margin-right:17%;">10003</span>
+                <br>
+                <span class="invoice-for">Invoice date :</span>
+                <span style="margin-right:6%;">30 Sep 2017</span>
+                <br>
+            </div>
+        </div>
+
+        <hr class="invoice-drawline-thin">
+
+        <table cellpadding="0" cellspacing="0">
+            <tr class="heading">
+                <td>Description</td>
+                <td>Qty</td>
+                <td>Rate</td>
+                <td>Total price</td>
+                <td id="toggle_removal">&#10063;</td>
+            </tr>
+
+            <tr class="item">
+                <td>dolore eu fuglat nulla parlatur</td>
+                <td>20</td>
+                <td>&#x20b9;1000.00</td>
+                <td>&#x20b9;20,000.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>sed do elusmod tempor incididunt</td>
+                <td>3</td>
+                <td>&#x20b9;243.00</td>
+                <td>&#x20b9;721.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item">
+                <td>item 123</td>
+                <td>20</td>
+                <td>&#x20b9;1000.00</td>
+                <td>&#x20b9;21,000.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>AYItem XYZ</td>
+                <td>3</td>
+                <td>&#x20b9;2430.00</td>
+                <td>&#x20b9;7210.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item">
+                <td>nulla parlatur</td>
+                <td>20</td>
+                <td>&#x20b9;100.00</td>
+                <td>&#x20b9;2,000.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>AY</td>
+                <td>3</td>
+                <td>&#x20b9;2243.00</td>
+                <td>&#x20b9;6729.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item">
+                <td>dolore eu fuglat nulla parlatur</td>
+                <td>20</td>
+                <td>&#x20b9;1000.00</td>
+                <td>&#x20b9;20,000.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>sed do elusmod tempor incididunt</td>
+                <td>3</td>
+                <td>&#x20b9;243.00</td>
+                <td>&#x20b9;721.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item">
+                <td>incididunt tempor incididun nulla</td>
+                <td>17</td>
+                <td>&#x20b9;1100.00</td>
+                <td>&#x20b9;18,700.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>sed do elusmod tempor incididunt</td>
+                <td>3</td>
+                <td>&#x20b9;243.00</td>
+                <td>&#x20b9;721.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item">
+                <td>lorem ipsum dolor set amet tempor dolor ameu dolore eu fuglat nulla parlatur</td>
+                <td>9</td>
+                <td>&#x20b9;10.00</td>
+                <td>&#x20b9;90.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>sed do elusmod tempor incididunt</td>
+                <td>3</td>
+                <td>&#x20b9;243.00</td>
+                <td>&#x20b9;721.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+
+            <tr class="item">
+                <td>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                    aliquid
+                    ex ea commodi consequatu
+                </td>
+                <td>11</td>
+                <td>&#x20b9;196.24</td>
+                <td>&#x20b9;2,158.6</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>abcdef test item</td>
+                <td>3</td>
+                <td>&#x20b9;12.00</td>
+                <td>&#x20b9;36</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item">
+                <td>U corporis suscipit laboriosam, nisi ut aliquid
+                    ex ea commodi consequatu
+                </td>
+                <td>11</td>
+                <td>&#x20b9;196.24</td>
+                <td>&#x20b9;2,158.6</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item even_row">
+                <td>abcdef test item</td>
+                <td>30</td>
+                <td>&#x20b9;120.00</td>
+                <td>&#x20b9;3,600.0</td>
+                <td class="cross">&#10062;</td>
+            </tr>
+
+            <tr class="item" style="height:33px;">
+                <td colspan="4"></td>
+            </tr>
+            <tr class="item" style="height:33px;">
+                <td colspan="4" style="border-bottom:1px solid rgb(226, 218, 218)"></td>
+            </tr>
+
+            <tr class="item">
+                <td>
+                    <span style="color:gray;font-weight:1000;">Notes</span>
+                </td>
+                <td colspan="2" style="color:#2C3D99;">Subtotal</td>
+                <td>
+                    <span style="font-weight:1000;">&#x20b9;106,566.20 </span>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="subtotal">
+            <span style="text-align:right;">&#x20b9;106,566</span>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="invoice.js"></script>
+
+</html>

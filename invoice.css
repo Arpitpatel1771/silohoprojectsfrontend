@@ -1,0 +1,239 @@
+html,
+body {
+    margin: 1%;
+}
+
+.invoice-drawline {
+    width: 100%;
+    height: 10px;
+    background-color: #243085;
+}
+
+.invoice-drawline-thin {
+    margin: 4%;
+    background-color: #F3F3F3;
+    position: relative;
+    margin-top: 365px;
+    display: block;
+    clear: both;
+}
+
+.invoice-company-info {
+    background-color: aqua;
+    height: auto;
+    margin: 4%;
+    position: relative;
+}
+
+#invoice-company-left {
+    float: left;
+    width: 65%;
+    background-color: #fff;
+}
+
+#invoice-company-right {
+    float: left;
+    width: 35%;
+    background-color: #fff;
+}
+
+.invoice-company-name {
+    color: #6F66E8;
+    font-size: 26px;
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+}
+
+.invoice-info {
+    color: #2C3D99;
+    font-size: 45px;
+    width: 100%;
+    font-weight: 1000;
+    float: right;
+    text-align: right;
+    margin-bottom: 13px;
+}
+
+.subtotal {
+    color: #E01B87;
+    font-size: 26px;
+    font-weight: 1000;
+    font-family: 'Lato', sans-serif;
+    width: 92%;
+    margin: 4%;
+    text-align: right;
+}
+
+.invoice-date {
+    color: #E01B87;
+    font-size: 17px;
+    font-weight: bold;
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.invoice-company-address {
+    font-family: 'Lato', sans-serif;
+}
+
+.address-manage {
+    background-color: #F3F3F3;
+    width: 50%;
+}
+
+.invoice-user-info {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 220px;
+    position: relative;
+}
+
+.invoice-for {
+    font-family: bold;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+td {
+    font-family: 'Lato', sans-serif;
+}
+
+.invoice-box {
+    max-width: auto;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 280px) {
+    .invoice-user-info {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 500px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .invoice-drawline-thin {
+        margin: 4%;
+        height: 1px;
+        background-color: gray;
+        position: relative;
+        margin-top: 400px;
+    }
+    .address-manage {
+        background-color: #F3F3F3;
+        width: 90%;
+    }
+    .invoice-company-name {
+        color: #6F66E8;
+        font-size: 18px;
+        font-weight: 550;
+        font-family: 'Lato', sans-serif;
+    }
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .invoice-info {
+        color: #2C3D99;
+        font-size: 30px;
+        width: 100%;
+        font-weight: 1000;
+        float: right;
+        text-align: right;
+        margin-bottom: 13px;
+    }
+    .invoice-date {
+        color: #E01B87;
+        font-size: 13px;
+        font-weight: bold;
+        float: right;
+        text-align: right;
+        margin-top: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.invoice-box table {
+    width: 92%;
+    line-height: inherit;
+    text-align: right;
+    margin: 4%;
+}
+
+.invoice-box table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoice-box table tr.top table td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoice-box table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+    border-bottom: none;
+    color: #2C3D99;
+    font-weight: bold;
+}
+
+.invoice-box table tr.heading td:first-child {
+    text-align: left !important;
+}
+
+.invoice-box table tr.item td:first-child {
+    text-align: left !important;
+    width: 60%;
+}
+
+.invoice-box table tr.item td {
+    vertical-align: middle;
+}
+
+.even_row{
+    background-color: #F3F3F3;
+}
+
+.cross{
+    font-size: 12px;
+}
+
+/** RTL **/
+
+.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.rtl table {
+    text-align: right;
+}
+
+.rtl table tr td:nth-child(2) {
+    text-align: right;
+}
